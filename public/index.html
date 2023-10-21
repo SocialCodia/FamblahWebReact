@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Famblah</title>
+  </head>
+      <style>
+        header,  .socialcodia, footer {
+        padding-left: 300px;
+        padding-right:1px;
+      }
+
+      @media only screen and (max-width : 992px) {
+        header, .socialcodia, footer {
+          padding-left: 0;
+        }
+      }
+    </style>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="socialcodia"></div>
+  </body>
+
+  <script>
+    $(document).ready(function(){
+    $('.tooltipped').tooltip();
+    $('.dropdown-trigger').dropdown();
+    $('.tabs').tabs();
+    $('.collapsible').collapsible();
+    $('.sidenav').sidenav();
+    
+  });
+  </script>
+</html>
